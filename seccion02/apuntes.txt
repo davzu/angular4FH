@@ -1,0 +1,24 @@
+apuntes
+
+- Los archivos typeScript tendrán extensión .ts
+
+- Para compilar un archivo .ts hay que usar el comando tsc <nombre_archivo>.ts, previamente debemos haber instalado typeScript.
+Al compilarlo generará un archivo <nombre_archivo>js
+Ejemplo:
+tsc app.ts => genera app.js
+
+- Para no estar ejecutando continuamente tsc <nombre_archivo>.ts podemos agregar un observador
+Ejemplo:
+tsc app.ts -w
+Sin embargo solo se podrá aplicar a un solo archivo.
+
+- Para poder trabajar de manera más rápida, indicaremos que el proyecto contendrá archivos typeScript.
+Para ello ejecutamos el comando
+tsc --init
+Con el comando anterior se creará el archivo tsconfig.json donde se podrá configurar los parámetros de compilación, entre ellos la versión de Ecma Script
+Posterior a ello, cada vez que ejecutemos el comando
+tsc
+todos los archivos .ts se compilarán y generarán sus respectivos archivos .js
+
+
+
