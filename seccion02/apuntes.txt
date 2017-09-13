@@ -21,4 +21,4 @@ tsc
 todos los archivos .ts se compilarán y generarán sus respectivos archivos .js
 
 
-
+- La interface no está presente en JS, es aplicado para TypeScript
